@@ -23,6 +23,12 @@ header{
 }
 .sobremi{
     background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
+.sobremi .imgsobremi{
+    height: 100%;
+    width: 100%;
 }
 .servicios{
     background-color: beige;
