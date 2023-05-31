@@ -47,6 +47,16 @@ header{
 .servicios{
     background-color: beige;
 }
+.servicios h1{
+    text-align: center;
+}
+
+.servicios .divunoservicios{
+    display: flex;
+}
+.servicios .divdosservicios{
+    display: flex;
+}
 
 /* --------estilo cuarta seccion------- */
 .portfolio{
