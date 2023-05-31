@@ -62,6 +62,20 @@ header{
 .portfolio{
     background-color: lightgreen;
 }
+.portfolio h1{
+    text-align: center;
+}
+.portfolio .botonesportfolio{
+    display: flex;
+    justify-content: space-evenly;
+}
+.portfolio .imagenesportfolio{
+    display: flex;
+}
+.portfolio .imagenesportfolio .imgportf{
+    width: 30%;
+}
+
 
 /* --------estilo quinta seccion------- */
 .contactame{
