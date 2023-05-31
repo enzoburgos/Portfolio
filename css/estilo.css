@@ -100,3 +100,13 @@ header{
 footer{
     background-color: lightpink;
 }
+footer h3{
+    text-align: center;
+}
+footer .redes{    
+    text-align: center;
+}
+footer .copyright{
+    display: flex;
+    justify-content: center;
+}
