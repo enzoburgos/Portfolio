@@ -76,10 +76,24 @@ header{
     width: 30%;
 }
 
-
 /* --------estilo quinta seccion------- */
 .contactame{
     background-color: lightcoral;
+}
+.contactame h1{
+    text-align: center;
+}
+.contactame .infocontacto{
+    display: flex;
+}
+.contactame .contactameizq{
+    width: 50%;
+}
+.contactame .contactameizq .flexicono{
+    display: flex;
+}
+.contactame .contactameder{
+    width: 50%;
 }
 
 /* ----------estilo footer----------- */
