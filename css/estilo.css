@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -7,21 +7,32 @@
 }
 a{
     text-decoration: none;
-    color: white;
+    color: #878787;
 }
 /* -----------estilo header---------- */
 header{
-    background-color:antiquewhite;
+    background-color: #181818;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     height: 3rem;
     align-items: center;
+}
+header h3{
+    color: #AA8C55;
+    margin-left: 5.5rem;
+    margin-right: 19rem;
+}
+header a{
+    margin-left: 2rem;
+}
+header button{
+    margin-left: 2rem;
+    margin-right: 5.5rem;
 }
 
 /* -------estilo primera seccion-------- */
 .inicio{
-
-    background-color: aqua;
+    /* background-color: aqua; */
     background-image: url(../img/Escritorio.jpg);
     background-position: center center;
     background-size: 100% 100%;
@@ -30,6 +41,15 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.inicio h4{
+    color: white;
+}
+.inicio h1{
+    color: white;
+}
+.inicio h3{
+    color: #AA8C55;
 }
 
 /* ---------estilo segunda seccion------- */
@@ -40,9 +60,17 @@ header{
 
 }
 .sobremi .infosobremi{
-    width: 50%;
-    padding: 5.2em 0;
+    background-color: #181818;
+    width: 33%;
+    padding: 5.5em 5.5em;
 }
+.sobremi .infosobremi h1{
+    color: #878787;
+}
+.sobremi .infosobremi p{
+    color: #878787;
+}
+
 .sobremi .fotoperfil{
     width: 50%;
 }
@@ -51,12 +79,17 @@ header{
 }
 
 /* --------estilo tercera seccion------- */
+.marginauto{
+    width: 85%;
+    margin: 0 auto;
+}
 .servicios{
     background-color: beige;
     padding-top: 5.5em;
 }
 .servicios h1{
     text-align: center;
+    color: #878787;
 }
 
 .servicios .divunoservicios{
