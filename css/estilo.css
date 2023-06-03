@@ -12,6 +12,11 @@
 a{
     text-decoration: none;
     color: #878787;
+    font-size: .9rem;
+    margin-left: 2rem;
+}
+input{
+    border: none;
 }
 /* -----------estilo header---------- */
 header{
@@ -19,17 +24,16 @@ header{
     display: flex;
     height: 3rem;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
-header h3{
+header h4{
     color: #AA8C55;
     margin-left: 5.5rem;
-    margin-right: 15rem;
-}
-header a{
-    margin-left: 2rem;
+    margin-right: 18rem;
 }
 header button{
-    font-size: .8rem;
+    font-size: .9rem;
     margin-left: 2rem;
     margin-right: 5.5rem;
     padding: .3rem .5rem;
@@ -82,7 +86,6 @@ header button{
     background-color: aquamarine;
     display: flex;
     justify-content: space-between;
-
 }
 .sobremi .infosobremi{
     background-color: #181818;
@@ -91,6 +94,7 @@ header button{
 }
 .sobremi .infosobremi h1{
     color: #878787;
+    margin-bottom: 1rem;
 }
 .sobremi .infosobremi p{
     color: #878787;
@@ -105,32 +109,42 @@ header button{
 
 /* --------estilo tercera seccion------- */
 .marginauto{
-    width: 85%;
+    width: 83%;
     margin: 0 auto;
 }
 .servicios{
-    background-color: beige;
+    background-color: #0A0A0A;
     padding-top: 5.5em;
 }
 .servicios h1{
     text-align: center;
     color: #878787;
+    margin-bottom: 2.5rem;
 }
 
 .servicios .marginauto .divunoservicios{
     display: flex;
     justify-content: space-between;
-}
-.servicios .marginauto .divdosservicios{
-    display: flex;
+    /* justify-content: center; */
 }
 .servicios .marginauto .divunoservicios div{
     border: #0A0A0A 1px solid;
     background-color: #121212;
+    flex-basis: 32%;
+    border-bottom: #AA8C55 1px solid;
+    margin-bottom: 1.5em;
 }
+.servicios .marginauto .divdosservicios{
+    display: flex;
+    justify-content: space-between;
+}
+
 .servicios .marginauto .divdosservicios div{
     border: #0A0A0A 1px solid;
     background-color: #121212;
+    flex-basis: 32%;
+    border-bottom: #AA8C55 1px solid;
+    /* margin-bottom: 1.5rem; */
 }
 
 .servicios .marginauto h3{
@@ -142,61 +156,74 @@ header button{
 
 /* --------estilo cuarta seccion------- */
 .portfolio{
-    background-color: lightgreen;
+    background-color: #0A0A0A;
     padding-top: 5.5em;
 }
 .portfolio .marginauto h1{
     color: #878787;
     text-align: center;
+    margin-bottom: 2.5rem;
 }
 .portfolio .marginauto .botonesportfolio{
     display: flex;
     justify-content: center;
-}
-.portfolio .marginauto .botonesportfolio .botontodos{
-    color: white;
-    background-color: #AA8C55;
+    margin-bottom: 2.5rem;
 }
 .portfolio .botonesportfolio button{
     padding: .5rem 1.5rem;
     border-radius: .2rem;
     border: none;
 }
+.portfolio .marginauto .botonesportfolio .botontodos{
+    color: white;
+    background-color: #AA8C55;
+}
 .portfolio .botonesportfolio .botonescritorio{
     background-color: #0A0A0A;
-    color: white;
+    color: #878787;
 }
 .portfolio .botonesportfolio .botontablet{
     background-color: #0A0A0A;
-    color: white;
+    color: #878787;
 }
 .portfolio .botonesportfolio .botonmovil{
     background-color: #0A0A0A;
-    color: white;
+    color: #878787;
 }
-
 
 .portfolio .imagenesportfolio{
     display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
 }
 .portfolio .imagenesportfolio .imgportf{
-    width: 30%;
+    width: 26.5vw;
+    height: 38vh;
+    /* flex-basis: 30%; */
 }
 
 /* --------estilo quinta seccion------- */
 .contactame{
-    background-color: lightcoral;
-    padding: 5.5em 0;
+    background-color: #0A0A0A;
+    padding: 5em 0 5.5em 0;
 }
-.contactame h1{
+.contactame .marginauto h1{
     text-align: center;
     color: #878787;
+    margin-bottom: 2.5rem;
 }
-.contactame .infocontacto{
+.contactame .marginauto .infocontacto{
     display: flex;
 }
-.contactame .infocontacto .contactameizq{
+.contactame .marginauto .infocontacto .contactameizq{
     width: 43%;
+}
+.contactame .marginauto .infocontacto .contactameizq div{
+    margin-bottom: 1.5rem;
+}
+.contactame .marginauto .infocontacto .contactameizq .iconosinfo{
+    color: white;
+    margin-right: .3rem;
 }
 .contactame .infocontacto .contactameizq h5{
     color: #AA8C55;
@@ -204,13 +231,36 @@ header button{
 .contactame .infocontacto .contactameizq p{
     color: white;
 }
-
 .contactame .contactameizq .flexicono{
     display: flex;
 }
+
 .contactame .contactameder{
     width: 57%;
 }
+.contactame .marginauto .infocontacto .contactameder .inputnombre{
+    padding: .5rem 1rem;
+    background-color: #181818;
+}
+.contactame .marginauto .infocontacto .contactameder .inputemail{
+    padding: .5rem 1rem;
+    background-color: #181818;
+    margin-left: .4rem;
+    width: 21.8vw;
+}
+.contactame .marginauto .infocontacto .contactameder .inputasunto{
+    margin: .7rem 0;
+    padding: .5rem 0 .5rem 1rem;
+    background-color: #181818;
+    width: 44.8vw;
+}
+.contactame .marginauto .infocontacto .contactameder .inputmensaje{
+    margin-bottom: .7rem;
+    padding: .5rem 0 4rem 1rem;
+    background-color: #181818;
+    width: 44.8vw;
+}
+
 .contactame .marginauto .infocontacto .contactameder button{
     background-color: #AA8C55;
     color: white;
@@ -221,19 +271,32 @@ header button{
 
 /* ----------estilo footer----------- */
 footer{
-    background-color: lightpink;
+    background-color: #181818;
     padding-top: 1.5em;
     padding-bottom: 1em;
 }
 footer h3{
     text-align: center;
     color: white;
+    margin-bottom: 1.5rem;
 }
 footer .redes{    
     text-align: center;
+}
+footer .redes .iconosredes{
+    color: #AA8C55;
+    margin-left: 1rem;
+    background-color: #414141;
+    border: #414141 1px solid;
+    padding: .5rem;
+    transform: rotate(45deg);
 }
 footer .copyright{
     display: flex;
     justify-content: center;
     color: #AA8C55;
+    margin-top: 1.5rem;
+}
+footer .copyright p{
+    margin-left: .3rem;
 }
