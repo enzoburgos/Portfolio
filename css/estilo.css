@@ -95,7 +95,7 @@ header button{
 .sobremi .infosobremi{
     background-color: #181818;
     width: 33%;
-    padding: 5.5em 5.5em;
+    padding: 5.5em 6em 6em 5.5em;
 }
 .sobremi .infosobremi h1{
     color: #878787;
@@ -103,6 +103,7 @@ header button{
 }
 .sobremi .infosobremi p{
     color: #878787;
+    font-size: .9rem;
 }
 
 .sobremi .fotoperfil{
@@ -134,27 +135,35 @@ header button{
 .servicios .marginauto .divunoservicios div{
     border: #0A0A0A 1px solid;
     background-color: #121212;
-    flex-basis: 32%;
+    flex-basis: 27%;
     border-bottom: #AA8C55 2px solid;
     margin-bottom: 1.5em;
+    padding: 2rem 1.3rem;
 }
+
 .servicios .marginauto .divdosservicios{
     display: flex;
     justify-content: space-between;
 }
-
 .servicios .marginauto .divdosservicios div{
     border: #0A0A0A 1px solid;
     background-color: #121212;
-    flex-basis: 32%;
+    flex-basis: 27%;
     border-bottom: #AA8C55 2px solid;
+    padding: 2rem 1.3rem;
 }
 
-.servicios .marginauto h3{
-    color: white;
+.servicios .marginauto div img{
+    width: 3.3vw;
+    margin-bottom: .5em;
 }
-.servicios .marginauto p{
+.servicios .marginauto div h4{
+    color: white;
+    margin-bottom: .5rem;
+}
+.servicios .marginauto div p{
     color: #878787;
+    font-size: .8rem;
 }
 
 /* --------estilo cuarta seccion------- */
@@ -197,13 +206,13 @@ header button{
 .portfolio .imagenesportfolio{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 1rem;
+    padding-bottom: 1.2rem;
 }
 .portfolio .imagenesportfolio .imgportf{
-    width: 26.5vw;
+    width: 26.2vw;
     height: 38vh;
     object-fit: cover;
-    border-radius: .2rem;
+    border-radius: .1rem;
 }
 
 /* --------estilo quinta seccion------- */
