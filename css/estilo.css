@@ -9,24 +9,19 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-a{
-    text-decoration: none;
-    color: #878787;
-    font-size: .9rem;
-    margin-left: 2rem;
-}
+
 input{
-    border: none;    
+    border: none;
+    color: white;    
 }
 
 /* ----------hover header------------- */
 header nav a:hover{
     border-bottom: #AA8C55 2px solid;
+    background-color: #AA8C55;
+    color: white;
 }
 header button:hover{
-    /* background-color: #c9a45f; */
-    /* filter: brightness(1.1); */
-    /* box-shadow: 0 0 20px #6fc5ff50; */
     transform: scale(1.07);
 }
 
@@ -40,7 +35,7 @@ header button:hover{
     background-color: #AA8C55;
     color: white;
 }
-.portfolio .marginauto .imagenesportfolio img:hover{
+.portfolio .marginauto .contenedorimgportfolio img:hover{
     transform: scale(1.07);
 }
 
@@ -57,13 +52,23 @@ header{
     align-items: center;
     position: fixed;
     width: 100%;
+    justify-content: space-between;
+}
+header .navmasboton{
+    display: flex;
+    align-items: center;
 }
 header h4{
     color: #AA8C55;
     margin-left: 5.5rem;
-    margin-right: 18rem;
 }
-header button{
+header .navmasboton a{
+    text-decoration: none;
+    color: #878787;
+    font-size: .9rem;
+    padding: 1.15rem 1rem 0.9rem 1rem;
+}
+header .navmasboton button{
     font-size: .9rem;
     margin-left: 2rem;
     margin-right: 5.5rem;
@@ -72,7 +77,6 @@ header button{
     background-color: #AA8C55;
     border-radius: .1rem;
     border: none;
-    /* transition: transform .5s; */
     transition: all 0.5s;
 }
 
@@ -96,7 +100,8 @@ header button{
 }
 .inicio h1{
     color: white;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    /* font-size: 5vw; */
 }
 .inicio h3{ 
     color: #AA8C55;
@@ -128,7 +133,6 @@ header button{
 .sobremi{
     background-color: aquamarine;
     display: flex;
-    justify-content: space-between;
 }
 .sobremi .infosobremi{
     background-color: #181818;
@@ -149,6 +153,7 @@ header button{
 }
 .sobremi .fotoperfil .imgsobremi{
     width: 100%;
+    height: 100%;
 }
 
 /* --------estilo tercera seccion------- */
@@ -177,6 +182,7 @@ header button{
     border-bottom: #AA8C55 2px solid;
     margin-bottom: 1.5em;
     padding: 2rem 1.3rem;
+    border-radius: .1rem;
 }
 
 .servicios .marginauto .divdosservicios{
@@ -189,6 +195,7 @@ header button{
     flex-basis: 27%;
     border-bottom: #AA8C55 2px solid;
     padding: 2rem 1.3rem;
+    border-radius: .1rem;
 }
 
 .servicios .marginauto div img{
@@ -223,8 +230,7 @@ header button{
     padding: .4rem 1.5rem;
     border-radius: .2rem;
     border: none;
-    margin-right: .1rem;
-    
+    margin-right: .1rem;  
 }
 .portfolio .marginauto .botonesportfolio .botontodos{
     color: white;
@@ -243,24 +249,26 @@ header button{
     color: #878787;
 }
 
-.portfolio .imagenesportfolio{
+.portfolio .marginauto .contenedorimgportfolio{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 1.2rem;
+
 }
-.portfolio .imagenesportfolio .imgportf{
+.portfolio .marginauto .contenedorimgportfolio .imgportf{
     width: 26.2vw;
     height: 38vh;
     object-fit: cover;
     border-radius: .1rem;
-
+    margin-bottom: 2.5vh;
     transition: all .5s;
 }
+
 
 /* --------estilo quinta seccion------- */
 .contactame{
     background-color: #0A0A0A;
-    padding: 5em 0 5.5em 0;
+    padding: 4.3em 0 5.5em 0;
 }
 .contactame .marginauto h1{
     text-align: center;
@@ -269,10 +277,9 @@ header button{
 }
 .contactame .marginauto .infocontacto{
     display: flex;
+    justify-content: space-between;
 }
-.contactame .marginauto .infocontacto .contactameizq{
-    width: 43%;
-}
+
 .contactame .marginauto .infocontacto .contactameizq div{
     margin-bottom: 1.5rem;
 }
@@ -292,30 +299,31 @@ header button{
     font-size: .8rem;
 }
 
-.contactame .contactameder{
-    width: 57%;
-}
 .contactame .marginauto .infocontacto .contactameder .inputnombre{
     padding: .5rem 1rem;
     background-color: #181818;
+    width: 33%;
 }
 .contactame .marginauto .infocontacto .contactameder .inputemail{
     padding: .5rem 1rem;
     background-color: #181818;
     margin-left: .5rem;
-    width: 21.5vw;
+    width: 49.4%;
+
 }
 .contactame .marginauto .infocontacto .contactameder .inputasunto{
     margin: 1rem 0;
     padding: .5rem 0 .5rem 1rem;
     background-color: #181818;
-    width: 44.8vw;
+    width: 96.5%;
+
 }
+
 .contactame .marginauto .infocontacto .contactameder .inputmensaje{
     margin-bottom: 1rem;
     padding: .5rem 0 4rem 1rem;
     background-color: #181818;
-    width: 44.8vw;
+    width: 96.5%;
 }
 
 .contactame .marginauto .infocontacto .contactameder button{
@@ -324,7 +332,6 @@ header button{
     border: none;
     border-radius: .2rem;
     padding: .5rem 2.5rem;
-
     transition: all 0.5s;
 }
 
@@ -332,7 +339,7 @@ header button{
 footer{
     background-color: #181818;
     padding-top: 1.3em;
-    padding-bottom: 1em;
+    padding-bottom: 1.3em;
 }
 footer h4{
     text-align: center;
@@ -344,15 +351,13 @@ footer .redes{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -1.5rem;
+    padding-left: 2rem;
 }
-
 footer .redes .linkredes{
-   
+    margin-right: 2em;
     background-color: #414141;
     transform: rotate(60deg);
     border-radius: .2rem;
-
 }
 footer .redes .linkredes img{
     width: 3vw;
@@ -376,3 +381,153 @@ footer .copyright p{
 footer .copyright .copy{
     font-size: .6rem;
 }
+
+
+
+
+
+/* ----------mediaqueries----------- */
+
+@media(max-width:767px){
+    
+ /* --------------- header ----------------*/
+    header{
+        background-color: transparent;
+    }
+    header .navmasboton{
+        display: none;
+    }
+    header h4{
+        display: none;
+    }
+    header .menuheader{
+        display: block;
+    }
+
+ /* ----------------inicio----------------- */
+    .inicio h1{
+        color: white;
+        font-size: 3rem;
+    }
+
+ /* ----------------sobre mi---------------- */
+    .sobremi{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .sobremi .infosobremi{
+        margin-top: -0.5em;
+        width: 82.9%;
+        padding:2em;
+    }
+    .sobremi .fotoperfil .imgsobremi{
+        width: 100%;
+        height: 100%;
+    }
+    .sobremi .fotoperfil{
+        width: 100%;
+    }
+
+
+ /* -------------servicios--------------- */
+    .servicios{
+    padding-top: 3em;
+    }
+    .servicios h1{
+        margin-bottom: 1.5rem;
+    }
+    .servicios .marginauto .contenedorservicios{
+        display: flex;
+        justify-content: space-between;
+    }
+    .servicios .marginauto .contenedorservicios .divunoservicios{
+        flex-direction: column;
+        width: 49%;
+    }
+    .servicios .marginauto .contenedorservicios .divunoservicios div{
+        height: 20%;
+        margin-bottom: 1rem;
+    }
+    .servicios .divdosservicios{
+        flex-direction: column;
+        width: 49%;
+    }
+    .servicios .divdosservicios div{
+        margin-bottom: 1rem;
+        height: 20%;
+
+    }
+
+    
+ /* -------------portfolio-------------- */
+    .portfolio{
+        padding-top: 2em;
+    }
+    .portfolio .marginauto h1{
+        margin-bottom: 1.5rem;
+    }
+    .portfolio .marginauto .botonesportfolio{
+        display: none;
+    }
+    .portfolio .marginauto .contenedorimgportfolio .imgportf{
+        width: 38vw;
+        height: 18vh;
+    }
+
+ /* --------------contactame------------- */
+    .contactame{
+        background-color: #0A0A0A;
+        padding: 1.5em 0 5.5em 0;
+    }
+    .contactame .marginauto h1{
+        margin-bottom: 1.75em;
+    }
+    .contactame .marginauto .infocontacto{
+        flex-direction: column-reverse;
+        margin: -1rem 0 -4rem 0;
+    }
+    .contactame .marginauto .infocontacto .contactameder .inputnombre{
+        width: 27%;
+    }
+    .contactame .marginauto .infocontacto .contactameder .inputemail{
+        width: 48.5%;
+    }
+    .contactame .marginauto .infocontacto .contactameder .inputasunto{
+        width: 94.5%;
+    }
+    .contactame .marginauto .infocontacto .contactameder .inputmensaje{
+        width: 94.5%;
+    }
+    .contactame .marginauto .infocontacto .contactameizq{
+        margin-top: 2.5em;
+    }
+
+ /* --------------footer-------------- */
+    footer .redes a{
+        padding: 0em 0.5em 0em 0.5em;
+    }
+    footer .redes .linkredes .iconosredes{
+        width: 1.2rem;
+    }
+}
+
+
+
+
+/* @media screen and (min-width:768px)and(max-width: 1023px){
+ 
+}
+
+@media screen and (min-width:1024px){
+
+} */
+
+/* ---------display none-------- */
+.menuheader{
+    color: white;
+    margin-left: 1.8rem;
+    margin-top: 1.8rem;
+    font-size: 2rem;
+    display: none;
+}
+
