@@ -5,40 +5,10 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
 input{
     border: none;
     color: white;    
 }
-
-/* ----------hover header------------- */
-header nav a:hover{
-    border-bottom: #AA8C55 2px solid;
-    background-color: #AA8C55;
-    color: white;
-}
-header button:hover{
-    transform: scale(1.07);
-}
-
-/* -----------hover inicio------------- */
-.inicio div button:hover{
-    transform: scale(1.07);
-}
-
-/* ---------hover portfolio---------- */
-.portfolio .marginauto div button:hover{
-    background-color: #AA8C55;
-    color: white;
-}
-.portfolio .marginauto .contenedorimgportfolio img:hover{
-    transform: scale(1.07);
-}
-
-/* ----------hover contactame----------- */
-.contactame .marginauto .infocontacto .contactameder button:hover{
-    transform: scale(1.07);
-} 
 
 /* -----------estilo header---------- */
 header{
@@ -122,9 +92,7 @@ header .navmasboton button{
 
 /* ---------estilo segunda seccion------- */
 .sobremi{
-    background-color: aquamarine;
     display: flex;
-
 }
 .sobremi .infosobremi{
     background-color: #181818;
@@ -139,7 +107,6 @@ header .navmasboton button{
     color: #878787;
     font-size: .9rem;
 }
-
 .sobremi .fotoperfil{
     width: 50%;
 }
@@ -163,12 +130,11 @@ header .navmasboton button{
     color: #878787;
     margin-bottom: 3rem;
 }
-
 .servicios .marginauto .divunoservicios{
     display: flex;
     justify-content: space-between;
 }
-.servicios .marginauto .divunoservicios div{
+.servicios .marginauto .contenedorservicios .divunoservicios div{
     border: #0A0A0A 1px solid;
     background-color: #121212;
     flex-basis: 27%;
@@ -180,7 +146,6 @@ header .navmasboton button{
 .servicios .marginauto .contenedorservicios .divunoservicios .imgresponsive{
     margin-left: 0
 }
-
 .servicios .marginauto .divdosservicios{
     display: flex;
     justify-content: space-between;
@@ -273,7 +238,6 @@ header .navmasboton button{
     display: flex;
     justify-content: space-between;
 }
-
 .contactame .marginauto .infocontacto .contactameizq div{
     margin-bottom: 1.5rem;
 }
@@ -303,23 +267,19 @@ header .navmasboton button{
     background-color: #181818;
     margin-left: .5rem;
     width: 49.4%;
-
 }
 .contactame .marginauto .infocontacto .contactameder .inputasunto{
     margin: 1rem 0;
     padding: .5rem 0 .5rem 1rem;
     background-color: #181818;
     width: 96%;
-
 }
-
 .contactame .marginauto .infocontacto .contactameder .inputmensaje{
     margin-bottom: 1rem;
     padding: .5rem 0 4rem 1rem;
     background-color: #181818;
     width: 96%;
 }
-
 .contactame .marginauto .infocontacto .contactameder button{
     background-color: #AA8C55;
     color: white;
@@ -340,7 +300,6 @@ footer h4{
     color: white;
     margin-bottom: 1.3rem;
 }
-
 footer .redes{    
     display: flex;
     justify-content: center;
@@ -361,7 +320,6 @@ footer .redes .linkredes img{
 footer .redes .linkredes .iconoface{
     height: 2.7vh;
 }
-
 footer .copyright{
     display: flex;
     justify-content: center;
@@ -376,6 +334,35 @@ footer .copyright .copy{
     font-size: .6rem;
 }
 
+/* ----------hover header------------- */
+header nav a:hover{
+    border-bottom: #AA8C55 2px solid;
+    background-color: #AA8C55;
+    color: white;
+}
+header button:hover{
+    transform: scale(1.07);
+}
+
+/* -----------hover inicio------------- */
+.inicio div button:hover{
+    transform: scale(1.07);
+}
+
+/* ---------hover portfolio---------- */
+.portfolio .marginauto div button:hover{
+    background-color: #AA8C55;
+    color: white;
+}
+.portfolio .marginauto .contenedorimgportfolio img:hover{
+    transform: scale(1.07);
+}
+
+/* ----------hover contactame----------- */
+.contactame .marginauto .infocontacto .contactameder button:hover{
+    transform: scale(1.07);
+} 
+
 /* -------------display none------------- */
 .menuheader{
     color: white;
@@ -385,7 +372,7 @@ footer .copyright .copy{
     display: none;
 }
 
-/* --------media queries celular----------- */
+/* -----------media queries celular----------- */
 @media(max-width:767px){
 
  /* --------------- header ----------------*/
@@ -415,7 +402,7 @@ footer .copyright .copy{
     }
     .sobremi .infosobremi{
         margin-top: -0.5em;
-        width: 82.9%;
+        width: 82.97%;
         padding:2em;
     }
     .sobremi .fotoperfil .imgsobremi{
@@ -554,9 +541,100 @@ footer .copyright .copy{
 
 /* ------------media queries PC-------------*/
 
-/* @media screen and (min-width:1920px){
+@media screen and (min-width:1920px){
     *{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
-} */
+    /* -----------------header---------------- */
+    header h4{
+        margin-left: 7.1rem;
+    }
+    header .navmasboton button{
+        margin-right: 7.1rem;
+    }
+
+    /* -----------------inicio---------------- */
+    .inicio div button{
+        font-size: .9rem;
+    }
+
+    /* ---------------sobre mi---------------- */
+    .sobremi .infosobremi{
+        padding: 8rem 8rem 8rem 7.4rem;
+    }
+    .sobremi .infosobremi h1{
+        font-size: 1.7rem;
+    }
+
+    /* ----------------servicios-------------- */
+    .servicios .marginauto h1{
+        font-size: 1.7rem;
+    }
+    .servicios .marginauto div p{
+        font-size: .9rem;
+    }
+    .servicios .marginauto .contenedorservicios .divunoservicios div{
+        flex-basis: 28.5%;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .servicios .marginauto .contenedorservicios .divdosservicios div{
+        flex-basis: 28.5%;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    /* --------------portfolio--------------- */
+    .portfolio .marginauto h1{
+        font-size: 1.7rem;
+    }
+    .portfolio .marginauto .botonesportfolio button{
+        font-size: 1rem;
+    }
+    .portfolio .marginauto .contenedorimgportfolio .imgportf{
+        height: 45vh;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* ---------------contactame-------------- */
+    .contactame .marginauto h1{
+        font-size: 1.7rem;
+        margin-bottom: 4rem;
+    }
+    .contactame .marginauto .infocontacto .contactameizq h4{
+        font-size: 1.2rem;
+    }
+    .contactame .marginauto .infocontacto .contactameizq .iconosinfo{
+        font-size: 1rem;
+    }
+    .contactame .marginauto .infocontacto .contactameizq p{
+        font-size: 1rem;
+    }
+    .contactame .marginauto .infocontacto .contactameder{
+        width: 56%;
+    }
+    .contactame .marginauto .infocontacto .contactameder input{
+        font-size: 1rem;
+    }
+    .contactame .marginauto .infocontacto .contactameder .inputemail{
+        width: 55%;
+    }
+    .contactame .marginauto .infocontacto .contactameder .inputasunto{
+        width: 97%;
+    }
+    .contactame .marginauto .infocontacto .contactameder .inputmensaje{
+        width: 97%;
+        padding-bottom: 5rem;
+    }
+    .contactame .marginauto .infocontacto .contactameder button{
+        font-size: 1rem;
+    }
+
+    /* --------------footer------------------ */
+    footer .redes .linkredes img{
+        width: 3vw;
+        height: 3vh;
+        padding: .6rem .1rem 0 0;
+    }
+}
 
